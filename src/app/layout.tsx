@@ -6,6 +6,7 @@ import Transition from "@/components/Transition/transition";
 import Header from "@/components/Header/Header";
 import localFont from "next/font/local";
 import Image from "next/image";
+import TsParticles from "@/utils/TsParticles";
 
 
 const stellar = localFont({
@@ -34,6 +35,7 @@ export default function RootLayout({
           height={1000}
           className="w-full h-full bg-blend-color-dodge absolute -z-10"
         />
+        <TsParticles />
         <Header />
         <Nav />
         <Transition />

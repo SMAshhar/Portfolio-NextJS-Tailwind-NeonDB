@@ -8,11 +8,13 @@ import { motion } from "framer-motion";
 
 // vaiants
 import { fadeIn } from "@/utils/variants";
+import FollowPointer from "@/utils/FollowPointer";
 
 const ContactComponent = () => {
   return (
     <div className="bg-slate-950/30 rounded-2xl px-4 lg:px-16 py-8 lg:py-16">
       <div className="container z-10 mx-auto text-center xl:text-left flex items-center justify-center">
+        <FollowPointer />
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}

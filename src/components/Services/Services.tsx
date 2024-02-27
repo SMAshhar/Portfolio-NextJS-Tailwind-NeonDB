@@ -6,11 +6,13 @@ import Slider from "./Slider";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
+import FollowPointer from "@/utils/FollowPointer";
 
 
 export default function ServicePage() {
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center fixed bg-slate-900/80 bg-blend-color-dodge">
+            <FollowPointer />
             <div className="xl:w-1/2 px-2 lg:px-16 pt-16 lg:py-12 text-center">
                 <motion.p
                     variants={fadeIn('down', 0.7)}

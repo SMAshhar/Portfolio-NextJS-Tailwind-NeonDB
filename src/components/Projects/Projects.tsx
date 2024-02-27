@@ -6,10 +6,12 @@ import Intro from "./Intro";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
+import FollowPointer from "@/utils/FollowPointer";
 
 export default function ProjectPage() {
     return (
         <div className="flex flex-col xl:flex-row w-full xl:pr-24 items-center justify-center">
+            <FollowPointer />
             <motion.div
                 variants={fadeIn('right', 0.7)}
                 initial="hidden"
