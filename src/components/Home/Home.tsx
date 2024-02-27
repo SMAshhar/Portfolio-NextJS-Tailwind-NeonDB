@@ -1,13 +1,27 @@
 'use client'
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
+import { useFollowPointer } from "@/utils/FollowPointer";
 
 export default function Main() {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
   return (
-    <div className="w-full h-screen fixed  bg-slate-900/60 bg-blend-color-dodge ">
-      <div className="w-full tracking-widest px-2 lg:flex lg:transform lg:-skew-y-3 h-screen fixed z-10">
+    <div className="w-full h-screen fixed bg-slate-900/60 bg-blend-color-dodge ">
+      <motion.div
+        ref={ref}
+        className="box h-6 w-6 bg-gradient-to-tr from-red-500 to-red-800 shadow-lg shadow-purple-500 z-50 rounded-full ring-1 ring-purple-500"
+        animate={{ x, y }}
+        transition={{
+          type: "string",
+          damping: 1,
+          stiffness: 100,
+          restDelta: 0.001
+        }}
+      />
+      <div className="w-full tracking-widest px-2 lg:flex lg:transform lg:-skew-y-3 h-screen fixed">
         <motion.div
           variants={fadeIn('right', 0.9)}
           initial="hidden"
@@ -19,13 +33,13 @@ export default function Main() {
             alt=""
             width={150}
             height={150}
-            className="self-center rounded-full ring-2 ring-purple-500"
+            className="self-center rounded-full ring-2 ring-purple-500 shadow-lg shadow-purple-600"
           />
           <div className="flex justify-center w-full p-2 text-red-200 text-6xl">Hi!</div>
           <div
             className={`text-white tracking-wider text-2xl lg:text-5xl text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}
           >
-             My name is
+            My name is
             <p className="font-extralight px-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
               Syed Muhammad
               <span className="text-red-500 font-light px-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
