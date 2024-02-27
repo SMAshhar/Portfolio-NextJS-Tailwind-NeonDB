@@ -72,7 +72,7 @@ export const aboutData: AboutDataItem[] = [
         stage: "2015-2018",
       },
       {
-        title: "Research and Development - Midas Safety Inc.",
+        title: "R&D - Midas Safety Inc.",
         stage: "2012-2015",
       },
     ],
@@ -81,7 +81,7 @@ export const aboutData: AboutDataItem[] = [
     title: "credentials",
     info: [
       {
-        title: "Certified Cloud Applied Generative AI Engineer - PIAIC",
+        title: "Certified Cloud Applied GenAI Engineer - PIAIC",
         stage: "ongoing",
       },
       {
