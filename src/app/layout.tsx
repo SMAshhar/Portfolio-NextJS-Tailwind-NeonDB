@@ -5,10 +5,11 @@ import Nav from "@/components/Nav/Nav";
 import Transition from "@/components/Transition/transition";
 import Header from "@/components/Header/Header";
 import localFont from "next/font/local";
+import Image from "next/image";
 
 
 const stellar = localFont({
-  src:'../../public/fonts/Stellar-light.otf'
+  src: '../../public/fonts/Stellar-light.otf'
 })
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +27,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={stellar.className}>
+        <Image
+          src="/gero-back.webp"
+          alt=""
+          width={1920}
+          height={1000}
+          className="w-full h-full bg-blend-color-dodge absolute -z-10"
+        />
         <Header />
         <Nav />
         <Transition />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
