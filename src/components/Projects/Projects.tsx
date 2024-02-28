@@ -1,6 +1,6 @@
 'use client'
 // components
-import WorkSlider from "./Slider";
+import WorkSlider from "./WorkSlider";
 import Intro from "./Intro";
 
 // framer motion
@@ -25,7 +25,7 @@ export default function ProjectPage() {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="w-full lg:w-2/3 xl:w-2/3 px-2 py-4 flex items-start justify-start">
+                className="w-full lg:w-2/3 xl:w-2/3 px-2 py-4 flex items-start justify-start skew-y-3">
                 <WorkSlider />
             </motion.div>
         </div>

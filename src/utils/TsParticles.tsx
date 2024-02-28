@@ -107,6 +107,7 @@ const TsParticles = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="hidden md:flex"
       />
     );
   }
