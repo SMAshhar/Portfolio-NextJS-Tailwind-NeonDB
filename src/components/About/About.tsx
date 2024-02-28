@@ -5,10 +5,12 @@
 import { motion } from "framer-motion"
 import { fadeIn } from "@/utils/variants"
 import Skills from "./Skills"
+import FollowPointer from "@/utils/FollowPointer"
 
 export default function AboutComponent() {
     return (
         <div className="w-full h-screen lg:flex items-center justify-center fixed bg-slate-900/80 bg-blend-color-dodge">
+            <FollowPointer />
             <div className="lg:w-1/2 px-2 lg:px-16 pt-16 lg:py-12 lg:transform lg:-skew-y-2 text-center lg:text-left">
                 <motion.p
                     variants={fadeIn('right', 0.7)}
