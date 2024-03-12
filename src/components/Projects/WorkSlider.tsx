@@ -99,7 +99,7 @@ export default function WorkSlider() {
                 {workSlides.slides.map((slide, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer inset-0  ">
+                            <div className="grid w-full grid-cols-2 grid-rows-2 gap-4 cursor-pointer inset-0  ">
                                 {slide.images.map((image, index) => {
                                     return (
                                         <div className="relative rounded-lg overflow-hidden flex items-center justify-center group" key={index}>

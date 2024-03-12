@@ -14,7 +14,7 @@ export default function Intro() {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-3xl xl:text-5xl tracking-widest py-12 font-extralight">
+                className="text-3xl xl:text-5xl tracking-widest py-3 lg:py-12 font-extralight">
                 My <span className="text-red-500">Projects</span>
             </motion.p>
             <motion.p

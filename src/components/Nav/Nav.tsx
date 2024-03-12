@@ -9,7 +9,8 @@ import {
     HiEnvelope,
 } from 'react-icons/hi2';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+
+import { usePathname } from 'next/navigation'
 import { ReactElement } from 'react';
 
 type NavData = {
@@ -50,7 +51,7 @@ export default function Nav() {
                         <Link className={`${link.path === pathname() && 'text-red-500'} relative flex items-center group hover:text-red-500 transition-all duration-300`} href={link.path} key={index}>
                             {/* tolltip */}
                             <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
-                                <div className='bg-white relative flex text-slate-800 items-center p-[6px] rounded-[3px]'>
+                                <div className='bg-white relative flex text-slate-800 items-center px-[6px] rounded-[3px]'>
                                     <div className='text-[12px] leading-none font-semibold capitalize'>
                                         {link.name}
                                     </div>
