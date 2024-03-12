@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={stellar.className}>
+        <div className="fixed top-0 h-7 flex items-center justify-center bg-violet-900 tracking-widest w-full text-white">WORK IN PROGRESS</div>
         <Image
           src="/gero-back.webp"
           alt=""
