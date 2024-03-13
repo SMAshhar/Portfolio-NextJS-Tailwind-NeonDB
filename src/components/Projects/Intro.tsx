@@ -8,13 +8,13 @@ import { fadeIn } from "@/utils/variants"
 export default function Intro() {
     return (
 
-        <div className="px-2 xl:px-16 pt-16 xl:py-12 lg:transform xl:-skew-y-2 text-center lg:text-left">
+        <div className="px-2 xl:px-16 pt-16 xl:py-12 lg:transform lg:-skew-y-2 text-center lg:text-left">
             <motion.p
                 variants={fadeIn('right', 0.7)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-3xl xl:text-5xl tracking-widest py-3 lg:py-12 font-extralight">
+                className="text-3xl lg:4xl 2xl:text-5xl tracking-widest py-3 lg:py-12 font-extralight">
                 My <span className="text-red-500">Projects</span>
             </motion.p>
             <motion.p

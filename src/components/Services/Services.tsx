@@ -19,7 +19,7 @@ export default function ServicePage() {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className="text-3xl lg:text-5xl tracking-widest py-12 font-extralight">
+                    className="text-3xl lg:text-4xl 2xl:text-5xl tracking-widest py-12 font-extralight">
                     What <span className="text-red-500">I</span> Offer?
                 </motion.p>
                 <motion.p

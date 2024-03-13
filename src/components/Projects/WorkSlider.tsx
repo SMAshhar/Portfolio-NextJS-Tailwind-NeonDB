@@ -87,7 +87,7 @@ export default function WorkSlider() {
     }
 
     return (
-        <div className="h-full w-full flex items-center justify-center xl:skew-y-3 ">
+        <div className="h-full w-full flex items-center justify-center lg:skew-y-3 ">
             <Swiper
                 spaceBetween={10}
                 pagination={{

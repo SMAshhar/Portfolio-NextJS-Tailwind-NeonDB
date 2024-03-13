@@ -36,7 +36,7 @@ export default function AboutComponent() {
                     with state of the art technologies.
                 </motion.p>
             </div>
-            <div className="lg:w-1/2 lg:transform lg:skew-y-3 flex lg:h-full 2xl:h-1/2 pt-12 items-center justify-center xl:items-end lg:justify-center inset-x-1/2">
+            <div className="lg:w-1/2 lg:transform lg:skew-y-3 flex lg:h-[90vh] pt-12 items-center justify-center xl:items-end lg:justify-center inset-x-1/2">
                 <Skills />
             </div>
         </div>
