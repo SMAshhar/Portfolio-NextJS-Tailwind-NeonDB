@@ -33,7 +33,7 @@ export default function AboutComponent() {
                     This is when I entered the field of <span className="text-red-500">AI</span>. Now, I am a <span className="text-red-500">full-stack developer</span>. With latest
                     technologies like <span className="text-red-500">GPTs, React, NextJS, Tailwind, JWT-Authentication, Stripe, Sanity CRM,
                     NeonDB, Vercel</span> in focus, I can build your full-stack websites, from scratch to deployemnt,
-                    with state of the art technologies.
+                    with st.ate of the art technologies.
                 </motion.p>
             </div>
             <div className="lg:w-1/2 lg:transform lg:skew-y-3 flex lg:h-[90vh] pt-4 md:pt-12 items-center justify-center xl:items-end lg:justify-center inset-x-1/2">
