@@ -87,7 +87,7 @@ export default function WorkSlider() {
     }
 
     return (
-        <div className="h-full w-full flex items-center justify-center xl:skew-y-3">
+        <div className="h-full w-full flex items-center justify-center lg:skew-y-3 ">
             <Swiper
                 spaceBetween={10}
                 pagination={{
@@ -99,7 +99,7 @@ export default function WorkSlider() {
                 {workSlides.slides.map((slide, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer inset-0  ">
+                            <div className="grid w-full grid-cols-2 grid-rows-2 gap-4 cursor-pointer inset-0  ">
                                 {slide.images.map((image, index) => {
                                     return (
                                         <div className="relative rounded-lg overflow-hidden flex items-center justify-center group" key={index}>

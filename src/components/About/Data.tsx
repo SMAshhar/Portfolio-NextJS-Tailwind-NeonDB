@@ -64,7 +64,7 @@ export const aboutData: AboutDataItem[] = [
         stage: "2021-Now",
       },
       {
-        title: "Project Engineer - Aisha Steel Mills",
+        title: "Lead Engineer - Aisha Steel Mills",
         stage: "2018-Now",
       },
       {
