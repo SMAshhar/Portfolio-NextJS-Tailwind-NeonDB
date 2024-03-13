@@ -69,7 +69,7 @@ const ContactComponent = () => {
     console.log(errors.email?.message)
 
     return (
-        <div className="bg-slate-950/30 rounded-2xl px-4 lg:px-16 py-8 lg:py-16">
+        <div className="bg-slate-950/30 rounded-2xl px-4 lg:px-16 py-4">
             <div className="container z-10 mx-auto text-center xl:text-left flex items-center justify-center">
                 <FollowPointer />
                 {/* text & form */}
@@ -91,25 +91,25 @@ const ContactComponent = () => {
                         animate="show"
                         exit="hidden"
                         onSubmit={handleSubmit(onSubmit)}
-                        className="flex-1 flex flex-col gap-6 w-full mx-auto"
+                        className="flex-1 flex flex-col gap-3 w-full mx-auto"
                     >
                         {/* input group */}
-                        <div className="flex flex-col lg:flex-row gap-x-6 w-full z-50">
-                            <input {...register('name', { required: '* Requires name.' })} type="text" placeholder="name" className="input bg-inherit ring-1 ring-purple-500 rounded-s-3xl rounded-e-3xl p-2 mb-6 lg:mb-0 px-4 selection:border-violet-500" />
+                        <div className="flex flex-col lg:flex-row justify-between gap-1 w-full z-50">
+                            <input {...register('name', { required: '* Requires name.' })} type="text" placeholder="name" className="input bg-inherit ring-1 ring-purple-500 rounded-s-3xl rounded-e-3xl p-2 mb-2 px-4 selection:border-violet-500" />
                             <p className='self-start text-red-500 tracking-tighter text-xs italic'>{errors.name?.message as string}</p>
-                            <input {...register('email', { required: '* Requires a valid email address' })} type="text" placeholder="email" className="input bg-inherit ring-1 w-full ring-purple-500 rounded-s-3xl rounded-e-3xl p-2 px-4 selection:ring-violet-500" />
+                            <input {...register('email', { required: '* Requires a valid email address' })} type="text" placeholder="email" className="input bg-inherit ring-1 w-full ring-purple-500 rounded-s-3xl lg:mb-2 rounded-e-3xl p-2 px-4 selection:ring-violet-500" />
                             <p className='self-start text-red-500 tracking-tighter text-xs italic'>{errors.email?.message as string}</p>
 
                         </div>
-                        <input {...register('subject', { required: '* Requires subject.' })} type="text" placeholder="subject" className="input z-50 bg-inherit ring-1 ring-purple-500 rounded-s-3xl rounded-e-3xl p-2 px-4 selection:ring-violet-500" />
+                        <input {...register('subject', { required: '* Requires subject.' })} type="text" placeholder="subject" className="input z-50 bg-inherit ring-1 ring-purple-500 rounded-s-3xl rounded-e-3xl py-2 px-4 selection:ring-violet-500" />
                         <p className='self-start text-red-500 tracking-tighter text-xs italic'>{errors.subject?.message as string}</p>
 
                         <textarea
                             cols={30}
-                            rows={10}
+                            rows={5}
                             placeholder="message"
                             {...register('description', { required: '* Requires description.' })}
-                            className="textarea bg-inherit ring-1 ring-purple-500 rounded-s-2xl rounded-e-2xl p-2 px-4 selection:ring-violet-500"
+                            className="textarea bg-inherit ring-1 ring-purple-500 rounded-s-2xl rounded-e-2xl py-2 px-4 selection:ring-violet-500"
                         ></textarea>
                         <p className='self-start text-red-900 tracking-tighter text-xs italic'>{errors.description?.message as string}</p>
 

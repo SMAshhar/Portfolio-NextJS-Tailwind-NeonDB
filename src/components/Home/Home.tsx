@@ -49,7 +49,7 @@ export default function Main() {
                 </span>
               </span>
             </p>
-            <p className="text-base font-extralight tracking-wider lg:text-xl px-4 lg:px-16 py-4">
+            <p className="text-base drop-shadow-none font-extralight tracking-wider lg:text-xl px-4 lg:px-16 py-4">
               I will build your next awesome website from scratch using latest
               state of the art technologies. I offer complete solutions with
               front-end, back-end, GPTs, APIs, CMS, payments and much more.
