@@ -35,21 +35,21 @@ export default function Main() {
             height={150}
             className="self-center rounded-full ring-2 ring-purple-500 shadow-lg shadow-purple-600"
           />
-          <div className="flex justify-center w-full p-2 text-red-200 text-6xl">Hi!</div>
+          <div className="flex justify-center w-full p-2 text-red-200 text-6xl drop-shadow-[0_1.2px_1.2px_rgba(240,64,255,0.8)]">Hi!</div>
           <div
-            className={`text-white tracking-wider text-2xl lg:text-5xl text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}
+            className={`text-white tracking-wider text-2xl lg:text-5xl text-center drop-shadow-[0_1.2px_1.2px_rgba(240,64,255,0.8)]`}
           >
             My name is
-            <p className="font-extralight px-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <p className="font-extralight px-2 drop-shadow-[0_1.2px_1.2px_rgba(240,64,255,0.8)]">
               Syed Muhammad
-              <span className="text-red-500 font-light px-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+              <span className="text-red-500 font-light px-2 drop-shadow-[0_1.2px_1.2px_rgba(240,64,255,0.8)]">
                 Ashhar
                 <span className="animate animate-ping font-extrabold text-2xl lg:text-7xl px-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                   !
                 </span>
               </span>
             </p>
-            <p className="text-base lg:text-xl px-4 lg:px-16 py-4">
+            <p className="text-base font-extralight tracking-wider lg:text-xl px-4 lg:px-16 py-4">
               I will build your next awesome website from scratch using latest
               state of the art technologies. I offer complete solutions with
               front-end, back-end, GPTs, APIs, CMS, payments and much more.

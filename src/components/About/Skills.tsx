@@ -42,7 +42,7 @@ export default function Skills() {
                     return (
                         <div
                             key={`${item.title}-${i}`}
-                            className="flex-1 flex flex-col text-sm md:text-base md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                            className="flex flex-col text-sm md:text-base md:flex-row max-w-max gap-x-2 items-center text-white/60"
                         >
                             {/* title */}
                             <div className="font-light mb-2 md:mb-0 ">{item.title}</div>

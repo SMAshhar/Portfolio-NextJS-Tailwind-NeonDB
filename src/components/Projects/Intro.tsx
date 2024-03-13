@@ -14,7 +14,7 @@ export default function Intro() {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-3xl lg:4xl 2xl:text-5xl tracking-widest py-3 lg:py-12 font-extralight">
+                className="text-2xl lg:3xl 2xl:text-5xl tracking-widest py-3 xl:py-12 font-extralight">
                 My <span className="text-red-500">Projects</span>
             </motion.p>
             <motion.p
@@ -22,12 +22,11 @@ export default function Intro() {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-sm lg:text-xl tracking-widest font-extralight">
+                className="text-sm lg:text-lg tracking-wider font-extralight">
                 Discover a dynamic portfolio showcasing full-stack websites, ecommerce platforms,
                 and captivating portfolio sites. Dive into innovative projects that blend creativity
                 and functionality seamlessly. Experience the harmonious fusion of technology and artistry
-                in a unique music application. Explore digital realms where passion and expertise redefine
-                possibilities. Welcome to my diverse array of projects, each crafted to leave a lasting impression.
+                in a unique music application. Welcome to my diverse array of projects, each crafted to leave a lasting impression.
             </motion.p>
         </div>
 
