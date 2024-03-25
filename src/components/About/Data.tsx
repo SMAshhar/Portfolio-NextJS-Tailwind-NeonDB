@@ -14,6 +14,14 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiFastapi,
+  SiPostgresql,
+  SiPoetry,
+  SiPython,
+  SiOpenai,
+  SiVercel,
+  SiMeta,
+  SiGoogle,
 } from "react-icons/si";
 
 
@@ -34,6 +42,26 @@ export const aboutData: AboutDataItem[] = [
   {
     title: "skills",
     info: [
+      {
+        title: "Microservices",
+        icons: [
+          <SiFastapi key={'h'} />,
+          <SiPoetry key={'f'} />,
+          <SiPython key={'g'} />,
+          <SiNextdotjs key={'i'} />,
+          <SiVercel key={'j'} />,
+          <SiPostgresql key={'e'} />,
+          // <FaWordpress />,
+        ],
+      },
+      {
+        title: "GenerativeAI",
+        icons: [
+          <SiOpenai key={'a'} />,
+          <SiMeta key={'b'} />,
+          <SiGoogle key={'c'} />
+        ],
+      },
       {
         title: "Web Development",
         icons: [

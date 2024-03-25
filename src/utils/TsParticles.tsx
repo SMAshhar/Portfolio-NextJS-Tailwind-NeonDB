@@ -51,7 +51,7 @@ const TsParticles = () => {
         },
         modes: {
           push: {
-            quantity: 9,
+            quantity: 5,
           },
           repulse: {
             distance: 200,
