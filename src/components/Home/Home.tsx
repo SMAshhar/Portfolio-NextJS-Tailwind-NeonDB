@@ -12,7 +12,7 @@ export default function Main() {
     <div className="w-full h-screen fixed bg-slate-900/60 bg-blend-color-dodge ">
       <motion.div
         ref={ref}
-        className="box h-6 w-6 bg-gradient-to-tr from-red-500 to-red-800 shadow-lg shadow-purple-500 z-50 rounded-full ring-1 ring-purple-500"
+        className="box hidden lg:block h-6 w-6 bg-gradient-to-tr from-red-500 to-red-800 shadow-lg shadow-purple-500 z-50 rounded-full ring-1 ring-purple-500"
         animate={{ x, y }}
         transition={{
           type: "string",
